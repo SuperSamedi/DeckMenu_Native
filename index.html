@@ -1,24 +1,80 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <title>🗃MTG Collection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Personnal CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Dynalight&display=swap" rel="stylesheet">
+
+  <title>Deck Menu</title>
 </head>
 
-<body>
-  <a href="new_deck_form.html">Add a new deck</a>
-  <br>
-  <br>
-  <!-- <img src="Images/RNA_growthspiral_sebmckinnon.jpg" alt="Cover Picture"> -->
-  <h1>Les Decks de Max</h1>
-  <ul>
-    <li><a href="ParOrdreDeLaReine.html">Par Ordre de la Reine!</a></li>
-    <li><a href="666.html">Si Six Scies Scient Six Cyprès, Six-cent-Six Scies, Scient Six-cent-Six Cyprès!</a></li>
-    <li><a href="LesGensDores.html">Les Gens Dorés!</a></li>
-  </ul>
 
-  <table border="1" noshade>
+<body>
+  <div class="div_TopMenuBar">
+    <a href="index.html">Menu</a>
+    <a href="new_deck_form.html">Nouveau Deck</a>
+  </div>
+
+  <div class="div_TopContainer">
+    <h1>Menu des decks</h1>
+    <h3>Choisissez votre arme!</h3>
+  </div>
+
+  <div class="div_Menu">
+    <a href="l-attirail-de-rograkh.html">
+      <div class="div_deck">
+        <div class="div_deck-cover">
+          <p class="deck_name">L'attirail de Rograkh</p>
+          <img class="deck_cover" src="images/rograkh-son-of-rohgahh_cover.jpg" alt="Deck Cover">
+          <div class="div_color_icons">
+            <img class="color_icon" src="images/uncolor_icon.png" alt="uncolor">
+            <!--<img class="color_icon" src="images/white_icon.png" alt="white">-->
+            <!--<img class="color_icon" src="images/blue_icon.png" alt="blue">-->
+            <!--<img class="color_icon" src="images/black_icon.png" alt="black">-->
+            <img class="color_icon" src="images/red_icon.png" alt="red">
+            <!--<img class="color_icon" src="images/green_icon.png" alt="green">-->
+          </div>
+          <img class="language-flag_icon" src="images/french-flag_icon.png" alt="french-flag">
+        </div>
+        <p class="description">Equipez Rograkh d'une myriade d'équipements et chargez dans le tas! (Cris de guerre requis à chaque attaque...)</p>
+      </div>
+    </a>
+
+    <a href="par-ordre-de-la-reine.html">
+      <div class="div_deck">
+        <div class="div_deck-cover">
+          <p class="deck_name">Par Ordre de la Reine!</p>
+          <img class="deck_cover" src="images/queen-marchesa.jpg" alt="Deck Cover">
+          <div class="div_color_icons">
+            <img class="color_icon" src="images/uncolor_icon.png" alt="uncolor">
+            <img class="color_icon" src="images/white_icon.png" alt="white">
+            <!--<img class="color_icon" src="images/blue_icon.png" alt="blue">-->
+            <img class="color_icon" src="images/black_icon.png" alt="black">
+            <img class="color_icon" src="images/red_icon.png" alt="red">
+            <!--<img class="color_icon" src="images/green_icon.png" alt="green">-->
+          </div>
+          <img class="language-flag_icon" src="images/french-flag_icon.png" alt="french-flag">
+        </div>
+        <p class="description">Dressez votre forteresse, faites reigner l'ordre sur le champs de bataille et développez vos plans dans l'ombre à l'aide de vos assassins.</p>
+      </div>
+    </a>
+  </div>
+
+  <table>
     <thead>
       <tr>
         <th>Nom</th>
@@ -39,12 +95,19 @@
     </tbody>
   </table>
 
+  <ul>
+    <li><a href="ParOrdreDeLaReine.html">Par Ordre de la Reine!</a></li>
+    <li><a href="666.html">Si Six Scies Scient Six Cyprès, Six-cent-Six Scies, Scient Six-cent-Six Cyprès!</a></li>
+    <li><a href="LesGensDores.html">Les Gens Dorés!</a></li>
+  </ul>
+
+
+
   <br>
 
-  <hr size="1" noshade>
+  <hr>
 
-  <h1>Les Deck de Mortis</h1>
-
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
