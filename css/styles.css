@@ -1,0 +1,141 @@
+/*****TAG SELECTORS*****/
+body{
+  background-color: #222831;
+  color: #EEEEEE;
+  margin: 0;
+  font-family: 'Amiri', serif;
+}
+
+a{
+  color: #EEEEEE;
+  text-decoration: none;
+  margin: 0 5px;
+  font-weight: bold;
+}
+a:hover{
+  color: #B55400;
+}
+
+div{
+  margin: 0;
+}
+
+hr{
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 10px;
+  width: 10%;
+  border-color: #393E46;
+}
+
+h1{
+  color: #B55400;
+  font-family: 'Dynalight', cursive;
+  font-size: 5em;
+  margin: 0;
+}
+h2{
+  color: #B55400;
+  font-size: 3em;
+  margin: 0;
+}
+h3{
+  font-size: 2em;
+  margin: 0;
+}
+
+p{
+  color: #EEEEEE;
+}
+
+table{
+  display: block;
+  border-collapse: collapse;
+  border-style: solid;
+  text-align: center;
+}
+thead{
+  margin: 0;
+}
+th{
+  padding: 10px;
+  vertical-align: middle;
+}
+td{
+  padding: 10px;
+  vertical-align: middle;
+}
+
+/*****CLASS SELECTORS*****/
+.div_TopMenuBar{
+  background-color: #393E46;
+  height: 3vh;
+  vertical-align: middle;
+}
+
+.div_TopContainer{
+  margin: 50px auto 100px;
+  text-align: center;
+}
+
+.div_Menu{
+  margin: 0;
+}
+
+.div_deck{
+  padding: 50px 0 50px 0;
+  text-align: center;
+  height: auto;
+}
+.div_deck:hover{
+  background-color: #393E46;
+}
+
+.deck_name{
+  font-size: 1.5rem;
+  padding: 20px;
+  text-align: left;
+  margin: 0;
+  position: absolute;
+  left: -50px;
+  top: -60px;
+}
+
+.div_deck-cover{
+  display: inline-block;
+  position: relative;
+  margin: auto;
+}
+
+.div_color_icons{
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -25px;
+}
+
+.color_icon{
+  display: block;
+  height: 35px;
+  margin: 2px;
+}
+
+.deck_cover{
+  display: block;
+  height: 250px;
+  margin: 0;
+  border-radius: 50px;
+}
+
+.language-flag_icon{
+  height: 50px;
+  position: absolute;
+  margin: auto;
+  right: -20px;
+  bottom: -10px;
+}
+
+.description{
+  text-align: left;
+  padding: 0 10%;
+}
