@@ -1,26 +1,70 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Personnal CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Dynalight&display=swap" rel="stylesheet">
+
+  <title>Deck Menu - Nouveau Deck</title>
+</head>
+
   <body>
-    <h1>Nouveau deck</h1>
-    <hr>
-    <form class="" action="index.html" method="post">
-      <label>Nom du deck : </label>
-      <input type="text"><br>
-      <label>Puissance : </label>
-      <input type="number"><br>
-      <label>Difficulté : </label>
-      <input type="number"><br>
-      <label>Description : </label><br>
-      <textarea name="name" rows="3" cols="60"></textarea><br>
-      <input type="submit">
-    </form>
-    <br>
-    <br>
-    <a href="index.html">Retour</a>
+    <nav>
+      <div class="nav-divs">
+        <a href="index.html">Menu</a>
+      </div>
+      <div class="nav-divs">
+        <a href="new_deck_form.html">Nouveau Deck</a>
+      </div>
+    </nav>
+
+    <div class="main">
+      <h2>Nouveau deck</h2>
+      <form class="new-deck_form" action="index.html" method="post">
+        <div class="form-div_column-flex">
+          <label>Nom</label>
+          <input type="text" name="deckName" id="deckName">
+        </div>
+        <div class="form-div_row-flex">
+          <label for="colors">Couleurs</label>
+          <input type="checkbox" name="colors" id="white">
+        </div>
+        <div class="form-div_row-flex">
+          <label for="power">Puissance : </label>
+          <input type="radio" name="power" id="pow1" value="1">
+          <input type="radio" name="power" id="pow2" value="2">
+          <input type="radio" name="power" id="pow3" value="3">
+          <input type="radio" name="power" id="pow4" value="4">
+          <input type="radio" name="power" id="pow5" value="5">
+        </div>
+        <div class="form-div_row-flex">
+          <label for="difficulty">Difficulté : </label>
+          <input type="radio" name="difficulty" id="dif1" value="1">
+          <input type="radio" name="difficulty" id="dif2" value="2">
+          <input type="radio" name="difficulty" id="dif3" value="3">
+          <input type="radio" name="difficulty" id="dif4" value="4">
+          <input type="radio" name="difficulty" id="dif5" value="5">
+        </div>
+        <div class="form-div_column-flex">
+          <label>Description</label>
+          <textarea name="name" rows="3" cols="60"></textarea>
+        </div>
+        <br>
+        <input type="submit">
+      </form>
+      <br>
+      <br>
+      <a href="index.html">Retour</a>
+    </div>
   </body>
 </html>
