@@ -28,8 +28,7 @@ header {
 
 section {
   margin-bottom: 3em;
-  /* text-align: center; */
-  /* height: auto; */
+  width: 100%;
 }
 
 a {
@@ -39,14 +38,6 @@ a {
 }
 a:hover {
   color: #B55400;
-}
-
-hr {
-  border-style: none;
-  border-top-style: dotted;
-  border-width: 10px;
-  width: 10%;
-  border-color: #e8f1ff;
 }
 
 h1 {
@@ -61,8 +52,13 @@ h2 {
 h3 {
   font-size: 2em;
 }
+h4{
+  padding-top: 0.25rem;
+  margin: 0.25rem;
+  margin-right: 0.1rem;
+}
 
-table {
+/* table {
   display: block;
   border-collapse: collapse;
   border-style: solid;
@@ -78,9 +74,9 @@ th {
 td {
   padding: 10px;
   vertical-align: middle;
-}
+} */
 
-input {
+/* input {
   background-color: #181b20;
   border: 1px solid white;
   color: #e8f1ff;
@@ -105,10 +101,10 @@ textarea {
   color: #e8f1ff;
   resize: vertical;
 
-}
+} */
 
 /***** CLASS SELECTORS *****/
-.nav-divs {
+nav div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,30 +116,20 @@ textarea {
   padding-right: 1em;
 }
 
-#menu {
+#main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  width: auto;
-  padding: 0em 2em;
-}
-
+/* 
 .new-deck_form {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
+} */
 
-form div {
-  margin-bottom: 1em;
-}
-
+/* 
 .form-div_column-flex {
   display: flex;
   flex-direction: column;
@@ -152,54 +138,92 @@ form div {
 .form-div_row-flex {
   display: flex;
   align-items: center;
+} */
+
+.deck{
+  padding: 0 0.75rem;
 }
 
-.div_deck:hover {
+.deck:hover {
   background-color: #393E46;
 }
 
-.deck_name {
+.deck-name {
+  font-size: auto;
+  margin-right: 0.25rem;
   font-size: 1.5rem;
-  padding: 20px;
 }
 
-.div_deck-cover {
-  display: inline-block;
-  position: relative;
-  margin: auto;
+.deck-cover {
+  position:relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 1rem;
+  background-size: cover;
 }
-
-.div_color_icons {
+.color-icons_container{
   display: block;
   position: absolute;
-  top: -10px;
-  left: -25px;
+  top: 0px;
+  right: 0px;
 }
-
-.color_icon {
-  display: block;
-  height: 35px;
+.color-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.color-icon {
+  height: 30px;
   margin: 2px;
 }
 
-.deck_cover {
+.difficulty-and-power_container {
   display: block;
-  height: 250px;
-  margin: 0;
-  border-radius: 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.difficulty-and-power {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.gameplay-indicator{
+  display: flex;
+  align-content: center;
+}
+.rating-stars {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  margin: 0.25rem;
+}
+.rating-star {
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+}
+.filled{
+  background-image: url(/images/star-icon_filled.png);
+}
+.empty{
+  background-image: url(/images/star-icon_empty.png);
 }
 
 .language-flag_icon {
-  height: 50px;
-  position: absolute;
-  margin: auto;
-  right: -20px;
-  bottom: -10px;
+  width: 2.5rem;
+  justify-self: flex-end;
+  margin-left: 1rem;
 }
 
 .description {
   text-align: left;
-  padding: 0 10%;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  text-align: justify;
 }
 
 .spacing {
