@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,10 +25,10 @@
 <body>
 
   <nav>
-    <div class="nav-divs">
+    <div>
       <a href="index.html">Menu</a>
     </div>
-    <div class="nav-divs">
+    <div>
       <a href="new_deck_form.html">Nouveau Deck</a>
     </div>
   </nav>
@@ -37,54 +38,83 @@
     <h3>Choisissez votre arme!</h3>
   </header>
 
-  <div id="menu">
-    <section class="deck">
-      <a href="l-attirail-de-rograkh.html">
-          <div class="div_deck-cover">
-            <p class="deck_name">L'attirail de Rograkh</p>
-            <img class="deck_cover" src="images/rograkh-son-of-rohgahh_cover.jpg" alt="Deck Cover">
-            <div class="div_color_icons">
-              <img class="color_icon" src="images/mana-symbols/uncolor_icon.png" alt="uncolor">
-              <!--<img class="color_icon" src="images/mana-symbols/white_icon.png" alt="white">-->
-              <!--<img class="color_icon" src="images/mana-symbols/blue_icon.png" alt="blue">-->
-              <!--<img class="color_icon" src="images/mana-symbols/black_icon.png" alt="black">-->
-              <img class="color_icon" src="images/mana-symbols/red_icon.png" alt="red">
-              <!--<img class="color_icon" src="images/mana-symbols/green_icon.png" alt="green">-->
+  <div id="main-content">
+    <a class="deck" href="l-attirail-de-rograkh.html">
+      <div class="deck-name">L'attirail de Rograkh</div>
+      <div class="deck-cover" style="background-image: url(/images/rograkh-son-of-rohgahh_cover.jpg);">
+        <div class="color-icons_container">
+          <div class="color-icons">
+            <img class="color-icon" src="images/mana-symbols/uncolor_icon.png" alt="uncolor">
+            <img class="color-icon" src="images/mana-symbols/white_icon.png" alt="white">
+            <img class="color-icon" src="images/mana-symbols/blue_icon.png" alt="blue">
+            <img class="color-icon" src="images/mana-symbols/black_icon.png" alt="black">
+            <img class="color-icon" src="images/mana-symbols/red_icon.png" alt="red">
+            <img class="color-icon" src="images/mana-symbols/green_icon.png" alt="green">
+          </div>
+        </div>
+        <div class="difficulty-and-power_container">
+          <div class="difficulty-and-power">
+            <div class="gameplay-indicator">
+              <h4>Difficulté:</h4>
+              <div class="rating-stars">
+                <div class="rating-star filled"></div>
+                <div class="rating-star filled"></div>
+                <div class="rating-star filled"></div>
+                <div class="rating-star empty"></div>
+                <div class="rating-star empty"></div>
+              </div>
+            </div>
+            <div class="gameplay-indicator">
+              <h4>Puissance:</h4>
+              <div class="rating-stars">
+                <div class="rating-star filled"></div>
+                <div class="rating-star filled"></div>
+                <div class="rating-star empty"></div>
+                <div class="rating-star empty"></div>
+                <div class="rating-star empty"></div>
+              </div>
             </div>
             <img class="language-flag_icon" src="images/french-flag_icon.png" alt="french-flag">
           </div>
-          <p class="description">Equipez Rograkh d'une myriade d'équipements et chargez dans le tas! (Cris de guerre requis à chaque attaque...)</p>
-      </a>
-    </section>
+        </div>
+      </div>
+      <p class="description">Equipez Rograkh d'une myriade d'équipements et chargez dans le tas! (Cris de guerre requis
+        à chaque attaque...)</p>
+    </a>
 
     <section>
       <a href="par-ordre-de-la-reine.html">
-          <div class="div_deck-cover">
-            <p class="deck_name">Par Ordre de la Reine!</p>
-            <img class="deck_cover" src="images/queen-marchesa.jpg" alt="Deck Cover">
-            <div class="div_color_icons">
-              <img class="color_icon" src="images/mana-symbols/uncolor_icon.png" alt="uncolor">
-              <img class="color_icon" src="images/mana-symbols/white_icon.png" alt="white">
-              <!--<img class="color_icon" src="images/mana-symbols/blue_icon.png" alt="blue">-->
-              <img class="color_icon" src="images/mana-symbols/black_icon.png" alt="black">
-              <img class="color_icon" src="images/mana-symbols/red_icon.png" alt="red">
-              <!--<img class="color_icon" src="images/mana-symbols/green_icon.png" alt="green">-->
-            </div>
-            <img class="language-flag_icon" src="images/french-flag_icon.png" alt="french-flag">
+        <div class="div_deck-cover">
+          <p class="deck_name">Par Ordre de la Reine!</p>
+          <img class="deck_cover" src="images/queen-marchesa.jpg" alt="Deck Cover">
+          <div class="div_color_icons">
+            <img class="color_icon" src="images/mana-symbols/uncolor_icon.png" alt="uncolor">
+            <img class="color_icon" src="images/mana-symbols/white_icon.png" alt="white">
+            <!--<img class="color_icon" src="images/mana-symbols/blue_icon.png" alt="blue">-->
+            <img class="color_icon" src="images/mana-symbols/black_icon.png" alt="black">
+            <img class="color_icon" src="images/mana-symbols/red_icon.png" alt="red">
+            <!--<img class="color_icon" src="images/mana-symbols/green_icon.png" alt="green">-->
           </div>
-          <p class="description">Dressez votre forteresse, faites reigner l'ordre sur le champs de bataille et développez vos plans dans l'ombre à l'aide de vos assassins.</p>
+          <img class="language-flag_icon" src="images/french-flag_icon.png" alt="french-flag">
+        </div>
+        <p class="description">Dressez votre forteresse, faites reigner l'ordre sur le champs de bataille et développez
+          vos plans dans l'ombre à l'aide de vos assassins.</p>
       </a>
     </section>
   </div>
 
-  
+
   <h2>Autres decks</h2>
   <ul>
-    <li>Si Six Scies Scient Six Cyprès, Six-cent-Six Scies, Scient Six-cent-Six Cyprès! 
-      <br>Mission: recyclez, remplissez ce cimetière de ces chimères. Réssuscitez et sillonez sans cesse le champs de bataille.
-      L'incisant flux incessant de votre puissance laissera votre compétition six pieds sous terre. </li>
-    <li>Les Gens Dorés! 
-      <br>Faites appel aux légendes dorées! Habillez les de marqueurs scintillants et utilisez vos adversaires comme tapis pour ne pas salir vos magnifiques parures.</li>
+    <li>Si Six Scies Scient Six Cyprès, Six-cent-Six Scies, Scient Six-cent-Six Cyprès!
+      <br>Mission: recyclez, remplissez ce cimetière de ces chimères. Réssuscitez et sillonez sans cesse le champs de
+      bataille.
+      L'incisant flux incessant de votre puissance laissera votre compétition six pieds sous terre.
+    </li>
+    <li>Les Gens Dorés!
+      <br>Faites appel aux légendes dorées! Habillez les de marqueurs scintillants et utilisez vos adversaires comme
+      tapis pour ne pas salir vos magnifiques parures.
+    </li>
   </ul>
 
 
@@ -92,7 +122,7 @@
   <br>
 
   <hr>
-
+  <script src="/script.js"></script>
 </body>
 
 </html>
