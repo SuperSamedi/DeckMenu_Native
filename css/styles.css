@@ -36,9 +36,6 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
-a:hover {
-  color: #B55400;
-}
 
 h1 {
   color: #B55400;
@@ -104,6 +101,20 @@ textarea {
 } */
 
 /***** CLASS SELECTORS *****/
+#hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25px;
+  padding: 5px;
+}
+#hamburger .bar {
+  width: 15px;
+  height: 4px;
+  background-color: aliceblue;
+  border-radius: 1px;
+}
+
 nav div {
   display: flex;
   justify-content: center;
