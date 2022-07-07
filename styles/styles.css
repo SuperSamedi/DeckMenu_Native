@@ -36,9 +36,6 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
-a:hover {
-  color: #B55400;
-}
 
 h1 {
   color: #B55400;
@@ -104,6 +101,20 @@ textarea {
 } */
 
 /***** CLASS SELECTORS *****/
+#hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25px;
+  padding: 5px;
+}
+#hamburger .bar {
+  width: 15px;
+  height: 4px;
+  background-color: aliceblue;
+  border-radius: 1px;
+}
+
 nav div {
   display: flex;
   justify-content: center;
@@ -228,6 +239,44 @@ nav div {
 
 .spacing {
   width: 5px;
+}
+
+.card {
+  width: 6.35cm;
+  height: 8.89cm;
+  background: url(/images/cardBack.jpg);
+  background-size: cover;
+  border: none;
+  border-right: 1px solid rgba(255, 255, 224, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 224, 0.3);
+  border-radius: .9rem;
+  box-shadow: 2px 2px 5px black;
+  color:rgba(0, 0, 0, 0);
+  transition: all 0.1s ease;
+}
+
+.cards-display {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 2rem 0;
+}
+
+.glimpse {
+  font-weight: bold;
+  color:cornflowerblue;
+}
+.glimpse:hover{
+  color: white;
+}
+
+#previewDisplay {
+  display:block;
+  position: absolute;
+  top: 100px;
+  left: 100px;
 }
 
 /***** ID SELECTORS *****/
