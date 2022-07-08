@@ -274,9 +274,20 @@ nav div {
 
 #previewDisplay {
   display:block;
-  position: absolute;
-  top: 100px;
-  left: 100px;
+  position: fixed;
+  width:100%;
+  height: 100%;
+  top:0;
+  left:0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.458);
+  padding-top: 25%;
+}
+#previewDisplay.hidden{
+  display: none;
+}
+.hidden{
+  display:none;
 }
 
 /***** ID SELECTORS *****/

@@ -2,6 +2,7 @@
 const scry = "https://api.scryfall.com"
 
 const glimpseSpansHTML = document.querySelectorAll(".glimpse")
+const previewDivHTML = document.querySelector("#previewDisplay")
 const cardPreviewHTML = document.querySelector("#previewDisplay img")
 console.log(cardPreviewHTML)
 // Generate search string from the glimpse spans.
@@ -24,9 +25,10 @@ fetch(scry + "/cards/search?q=" + encodeURIComponent(searchString))
 
 // We tell glimpse spans to listen to hover/focus
 glimpseSpansHTML.forEach(element => {
-    element.addEventListener("mouseover", displaycardPreview);
-    // element.innerHTML = "Coucou"
+    element.addEventListener("click", displaycardPreview);
 });
+
+previewDivHTML.addEventListener("click", hideCardPreview)
 
 // When span is hovered/focused
 function displaycardPreview() {
@@ -43,6 +45,13 @@ function displaycardPreview() {
             }
         }
     }
+    previewDivHTML.classList.remove("hidden")
+    cardPreviewHTML.classList.remove("hidden")
+}
+
+function hideCardPreview() {
+    previewDivHTML.classList.add("hidden");
+    cardPreviewHTML.classList.add("hidden");
 }
 // searchButtonHTML.addEventListener("click", research)
 
