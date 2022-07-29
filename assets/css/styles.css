@@ -1,0 +1,233 @@
+* {
+  margin : 0;
+  padding: 0;
+}
+
+/***** TAG SELECTORS *****/
+body {
+  background-color: #222831;
+  color: #EEEEEE;
+  font-family: 'Amiri', serif;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: #181b20;
+  border-bottom: 1px solid black;
+}
+
+header {
+  margin-top: 2em;
+  margin-bottom: 4em;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 3em;
+  width: 100%;
+}
+
+a {
+  color: #EEEEEE;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #B55400;
+}
+
+h1 {
+  color: #B55400;
+  font-family: 'Dynalight', cursive;
+  font-size: 5em;
+}
+h2 {
+  color: #B55400;
+  font-size: 3em;
+}
+h3 {
+  font-size: 2em;
+}
+h4{
+  padding-top: 0.25rem;
+  margin: 0.25rem;
+  margin-right: 0.1rem;
+}
+
+/* table {
+  display: block;
+  border-collapse: collapse;
+  border-style: solid;
+  text-align: center;
+}
+thead {
+  margin: 0;
+}
+th {
+  padding: 10px;
+  vertical-align: middle;
+}
+td {
+  padding: 10px;
+  vertical-align: middle;
+} */
+
+/* input {
+  background-color: #181b20;
+  border: 1px solid white;
+  color: #e8f1ff;
+  padding: 0.3em;
+}
+
+input[type="radio"] {
+  margin: 0em 0.3em;
+}
+
+input[type="submit"] {
+  font-weight: bold;
+  width: 50%;
+}
+
+input[id="white"]{
+  size: 2em;
+}
+
+textarea {
+  background-color: #181b20;
+  color: #e8f1ff;
+  resize: vertical;
+
+} */
+
+/***** CLASS SELECTORS *****/
+nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #393E46;
+  margin: 1px;
+  height : 100%;
+  border-radius: 0px 0px 1px 1px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 
+.new-deck_form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+} */
+
+/* 
+.form-div_column-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-div_row-flex {
+  display: flex;
+  align-items: center;
+} */
+
+.deck{
+  padding: 0 0.75rem;
+}
+
+.deck:hover {
+  background-color: #393E46;
+}
+
+.deck-name {
+  font-size: auto;
+  margin-right: 0.25rem;
+  font-size: 1.5rem;
+}
+
+.deck-cover {
+  position:relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 1rem;
+  background-size: cover;
+}
+.color-icons_container{
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.color-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.color-icon {
+  height: 30px;
+  margin: 2px;
+}
+
+.difficulty-and-power_container {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.difficulty-and-power {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.gameplay-indicator{
+  display: flex;
+  align-content: center;
+}
+.rating-stars {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  margin: 0.25rem;
+}
+.rating-star {
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+}
+.filled{
+  background-image: url(/images/star-icon_filled.png);
+}
+.empty{
+  background-image: url(/images/star-icon_empty.png);
+}
+
+.language-flag_icon {
+  width: 2.5rem;
+  justify-self: flex-end;
+  margin-left: 1rem;
+}
+
+.description {
+  text-align: left;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.spacing {
+  width: 5px;
+}
+
+/***** ID SELECTORS *****/
